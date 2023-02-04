@@ -43,19 +43,12 @@ class dragDropMain {
   }
   handleEventsItem() {
     let allItem = ul.querySelectorAll('.item');
+    let iconDeletes = ul.querySelectorAll('.fa-xmark');
     let currentIndex;
     let dropIndex;
     allItem.forEach((item) => {
       item.addEventListener("dragover", (e) => {
         e.preventDefault();
-      })
-
-      item.addEventListener("dragenter", () => {
-        item.classList.add("active");
-      })
-
-      item.addEventListener("dragleave", () => {
-        item.classList.remove("active");
       })
 
       item.addEventListener("dragstart", () => {
@@ -80,4 +73,4 @@ class dragDropMain {
     })
   }
 }
-const dragDropObj = new dragDropMain()
+const dragDropObj = new dragDropMain();

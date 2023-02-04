@@ -42,10 +42,8 @@ li {
 }
 .item.active {
   border: 2px solid #AABDD9;
+  opacity: 0.2;
 }
-/* .item:hover {
-  border: 2px solid #AABDD9;
-} */
 .app h1 {
   margin-bottom: 25px;
   font-size: 40px;
@@ -53,6 +51,7 @@ li {
 }
 .item-text {
   margin-left: 22px;
+  flex: 1;
 }
 .item-heading {
   margin-bottom: 8px;
